@@ -1,6 +1,7 @@
 import React from "react";
+import Swal from "sweetalert2";
+
 export function SignOut() {
-  const Swal = require("sweetalert2");
   function logout() {
     Swal.fire({
       title: "Are you sure?",
@@ -20,11 +21,10 @@ export function SignOut() {
 
   return (
     <div
-      onClick={() => {
-        logout();
-      }}
+      onClick={logout}
+      style={{ cursor: "pointer", color: "red" }}
     >
-      {"Log out"}
+      Log out
     </div>
   );
 }

@@ -7,6 +7,9 @@ const PATH = {
   SIGN_IN: "/",
   REGISTER: "/register",
   DASHBOARD: "/dashboard",
+  ADMIN_DASHBOARD: "/admin-dashboard",
+  USER_DASHBOARD: "/user-dashboard", 
+  MANAGER_DASHBOARD: "/manager-dashboard",
   LANDING_PAGE: "/landing-page",
 };
 

@@ -5,7 +5,7 @@ import { ParentComponentWithSideBar } from "../../assets/genericComponents/Paren
 
 function PrivateRoute({ children }) {
   const jwtToken = JSON.parse(localStorage.getItem("dummy_user"));
-  
+  console.log("jwtToken", jwtToken);
   if (jwtToken) {
     return <ParentComponentWithSideBar>{children}</ParentComponentWithSideBar>;
   } else {
